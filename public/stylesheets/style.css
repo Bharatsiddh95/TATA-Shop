@@ -1,0 +1,134 @@
+body{
+ 
+background-color: beige;
+
+}
+
+
+
+.form{
+  background-color: rgb(240, 248, 255);
+  margin: 0 5%;
+  padding: 30px 60px;
+  border-radius: 20px;
+  
+}
+.row {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  
+}
+.col {
+  padding: 20px 40px;
+  text-align: left;
+  width: 20vw;
+
+  /* margin-left: 10vw; */
+  
+  margin: auto;
+}
+.form-control{
+  width: 100%;
+  border: none;
+  padding: 10px 25px;
+}
+label{
+  display: block;
+  text-align: left;
+}
+#btn{
+  text-decoration: none;
+  background-color: rgb(255, 99, 71);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+
+}
+
+.btn{
+  cursor: pointer;
+  padding: 15px 20px;
+  background-color: rgb(255, 99, 71);
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: azure;
+  font-weight: 700;
+  margin-top: 0;
+ 
+}
+@media (max-width:650px) {
+  body{
+ 
+    background-color: beige;
+    
+    }
+    
+    
+    
+    .form{
+      
+      background-color: rgb(240, 248, 255);
+      margin: 0 5%;
+      padding: 30px 60px;
+      border-radius: 20px;
+      
+    }
+    .row {
+     
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: auto auto auto auto;
+      
+    }
+    .col {
+      padding: 20px 40px;
+      text-align: left;
+      width: 20vw;
+      
+    
+      /* margin-left: 10vw; */
+      
+      margin: auto;
+    }
+    .form-control{
+      width: 50vw;
+     
+      border: none;
+      padding: 10px 25px;
+    }
+    label{
+      display: block;
+      text-align: left;
+    }
+    #btn{
+      display: flex;
+      flex-direction: column;
+      
+      text-decoration: none;
+      background-color: rgb(255, 99, 71);
+      padding: 10px 10px;
+      border: none;
+      border-radius: 50px;
+      color: white;
+    
+    }
+    
+    .btn{
+      font-size: 3vw;
+      cursor: pointer;
+      padding: 10px 50px;
+      background-color: rgb(255, 99, 71);
+      border: none;
+      border-radius: 50px;
+      text-transform: uppercase;
+      color: azure;
+      font-weight: 700;
+      margin-top: 10;
+      margin-bottom: 20px;
+     
+    }
+ 
+  
+}

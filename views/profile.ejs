@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TATA</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #navbar {
+        position:relative;
+        z-index: 1;
+        height: 12vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.674);
+        color: white;
+      }
+      #nav {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .nav-right input {
+        position: relative;
+        margin-top: 4vh;
+        width: 30vw;
+        font-size: 1.3vw;
+        height: 5vh;
+        border: none;
+        border-radius: 10px;
+      }
+      .nav-right i {
+        margin-top: 4vh;
+        margin-left: 1vw;
+        z-index: 999;
+        font-size: 2vw;
+        color: black;
+        position: absolute;
+      }
+      .nav-left {
+        color: brown;
+        font-weight: 500;
+      }
+      .nav-left h1 {
+        font-weight: 500;
+        font-size: 2.4vw;
+      }
+      .nav-left span {
+        color: rgb(188, 69, 69);
+        font-size: 2vw;
+      }
+      .nav-icon a {
+        text-decoration: none;
+        margin: 0vw 5vw;
+
+        color: aliceblue;
+      }
+      .nav-icon a:hover {
+        text-decoration: underline;
+        color: rgb(218, 248, 248);
+        font-size: 1.7vw;
+      }
+      .nav-icon #bilu {
+        background-color: salmon;
+        padding: 10px 10px;
+        border-radius: 5px;
+      }
+      .nav-icon i {
+        font-size: 1.5vw;
+      }
+      .nav-icon i:hover {
+        font-size: 2vw;
+      }
+
+      #main {
+        position: relative;
+      }
+
+      #page1 {
+        height: 70vh;
+        width: 100vw;
+        object-fit: cover;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        object-position: center;
+        position: relative;
+      }
+      #page1 img {
+        position: relative;
+
+        height: 100%;
+        width: 99%;
+      }
+
+      #page2 {
+        height: 70vh;
+        width: 100vw;
+        text-align: center;
+        margin-top: 5vh;
+      }
+      #cards {
+        height: 60vh;
+        width: 80%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10vw;
+      }
+      .card {
+        height: 90%;
+        width: 40%;
+        background-repeat: no-repeat;
+        border-radius: 17px;
+
+        object-fit: cover;
+        object-position: center;
+      }
+      .card img {
+        border-radius: 17px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      #page3 {
+        position: relative;
+        height: 280vh;
+        width: 70vw;
+        margin: auto;
+      }
+      .card-main {
+        position: relative;
+        height: 58vh;
+        width: 70vw;
+        margin: auto;
+        display: flex;
+        gap: 4vw;
+      }
+      .p3-card {
+        position: relative;
+        height: 50vh;
+        width: 40vw;
+        border-radius: 10px;
+        background-color: red;
+      }
+      .p3-card:hover {
+        cursor: pointer;
+        height: 53vh;
+        box-shadow: 10px 10px 10px rgb(238, 201, 201);
+      }
+      .p3-card img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      #page3 button {
+        font-size: 2vw;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: brown;
+        color: white;
+        margin-top: -10vh;
+        cursor: pointer;
+        margin-bottom: 4vh;
+      }
+      #page3 #left {
+        margin-left: 40vw;
+      }
+      .futer {
+        background: linear-gradient(red, blue);
+        color: white;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div id="main">
+
+
+        <div id="navbar">
+            <div id="nav">
+              <div class="nav-left">
+                <h1>TATA</h1>
+                <span>CLiQ</span>
+              </div>
+              <div class="nav-right">
+                <a href="/card"> <i class="ri-search-line"></i></a>
+                <input type="text" placeholder="                   Search Brands" />
+              </div>
+              <div class="nav-icon">
+                <a href="">Profile</a>
+                <i class="ri-shopping-bag-line"></i>
+                <a id="bilu" href="/">LogOut</a>
+              </div>
+            </div>
+          </div>
+      
+      <div id="page1">
+        <img
+          src="https://assets.tatacliq.com/medias/sys_master/images/49916139864094.jpg"
+          alt=""
+        />
+      </div>
+
+      <div id="page2">
+        <h2>Deal icious Offers</h2>
+
+        <div id="cards">
+          <div class="card">
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739179360286.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card">
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739179294750.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card">
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739179425822.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card">
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739179491358.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div id="page3">
+        
+        <div class="card-main">
+          <div class="p3-card">
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739179950110.jpg"
+              alt=""
+            />
+          </div>
+          <div class="p3-card">
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739180015646.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <button>Buy $40</button>
+        <button id="left">Buy $40</button>
+
+        <div class="card-main">
+          <div class="p3-card">
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739180081182.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="p3-card">
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739180146718.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <button>Buy $40</button>
+        <button id="left">Buy $40</button>
+
+        <div class="card-main">
+          <div class="p3-card">
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739180212254.jpg"
+              alt=""
+            />
+          </div>
+          <div class="p3-card">
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739180277790.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <button>Buy $40</button>
+        <button id="left">Buy $40</button>
+        <div class="card-main">
+          <div class="p3-card">
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49792086147102.jpg"
+              alt=""
+            />
+          </div>
+          <div class="p3-card">
+            <img
+              src="https://assets.tatacliq.com/medias/sys_master/images/49739180474398.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <button>Buy $40</button>
+        <button id="left">Buy $40</button>
+
+        <div class="futer">
+          <h4>&copy;Right By TATA</h4>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="/javascripts/profile.js"></script>
+  </body>
+</html>
